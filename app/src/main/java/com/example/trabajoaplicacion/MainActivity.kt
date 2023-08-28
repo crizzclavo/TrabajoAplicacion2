@@ -11,29 +11,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-   /*private fun generarDatos(): ArrayList<Album>{
-       val lista= ArrayList<Album>()
-       lista.add(
-           Album(R.drawable.pablohoney1, "Pablo Honey", "Rock Alternativo",
-           "22/2/1993", 12)
-       )
-
-       lista.add(Album(R.drawable.bends, "The Bends", "Rock Alternativo",
-           "13/3/1995", 21))
-
-       lista.add(Album(R.drawable.okcomput, "OK Computer", "Rock Alternativo/Electronica",
-           "16/6/1997", 12))
-
-       lista.add(Album(R.drawable.kid, "KID A", "Rock Alternativo/Electronica",
-           "4/6/2000", 10))
-
-       lista.add(Album(R.drawable.amne, "Amnesiac", "Rock Alternativo/Electronica",
-           "9/6/2001", 11))
-
-
-       return lista
-
-   } */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

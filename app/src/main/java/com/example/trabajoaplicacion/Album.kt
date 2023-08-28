@@ -8,7 +8,7 @@ data class Album (
     val titulo: String,
     val genero: String,
     val fecha: String,
-    val canciones: Int,
+    val canciones: String,
 
 
 ) : Serializable

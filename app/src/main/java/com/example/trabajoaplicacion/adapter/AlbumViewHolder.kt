@@ -14,13 +14,14 @@ class AlbumViewHolder(view:View): RecyclerView.ViewHolder(view) {
     val titulo= view.findViewById<TextView>(R.id.tvTitulo)
     val genero = view.findViewById<TextView>(R.id.tvGenero)
     val fecha= view.findViewById<TextView>(R.id.tvFecha)
-
+    val canciones= view.findViewById<TextView>(R.id.tvCanciones)
 
     fun render( albumModel: Album){
         Glide.with(imgImagen.context).load(albumModel.imgImagen).into(imgImagen)
        titulo.text= albumModel.titulo
         genero.text= albumModel.genero
         fecha.text= albumModel.fecha
+        canciones.text=albumModel.canciones
 
     }
 }
