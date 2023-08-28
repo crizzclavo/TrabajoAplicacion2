@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivAlbum"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        ></ImageView>
+    
+    
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pablo Honey"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivAlbum"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock Alternativo"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintStart_toEndOf="@id/ivAlbum"
+        android:textStyle="bold"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="Fecha"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toEndOf="@id/ivAlbum"
+        app:layout_constraintTop_toBottomOf="@id/tvGenero"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

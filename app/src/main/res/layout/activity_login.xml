@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="@drawable/background"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/singin"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="RADIOHEAD Discography"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+
+        android:textStyle="bold"
+
+
+        />
+
+
+    <EditText
+
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#20ffffff"
+        android:drawableLeft="@drawable/baseline_person_pin_24"
+        android:drawablePadding="10dp"
+        android:hint="USUARIO"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/singin"
+
+        />
+
+    <EditText
+
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        android:hint="CONTRASEÑA"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        tools:layout_editor_absoluteX="0dp" />
+
+    <CheckBox
+        android:id="@+id/cbRecordar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordar Usuario"
+        android:textColor="@color/white"
+        android:padding="20dp"
+
+        />
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <Button
+            android:id="@+id/botonRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:layout_weight=".5"
+            android:backgroundTint="@color/black"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <Button
+            android:id="@+id/botonIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_weight=".5"
+            android:backgroundTint="@color/black"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Olvidaste tu contraseña?"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/botonIniciar" />
+
+
+</LinearLayout>
